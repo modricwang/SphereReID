@@ -40,3 +40,5 @@ Sadly, I am not able to reproduce the result merely with the method mentioned in
 * Adjust the total training epoch number to 150, and let the learning rate jump by a factor of 0.1 at epoch 90 and 130.
 
 With these tricks, the rank-1 cmc and mAP of my implementation reaches 93.08 and 83.01.
+
+It works well on 4 GPUs. However its performance drop heavily when trained on 8 GPUs. It's really confusing.
